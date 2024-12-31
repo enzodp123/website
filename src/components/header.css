@@ -1,0 +1,77 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height:10vh;
+    
+}
+
+.container-logo{
+    display: flex;
+    padding:0% 5.14%;
+}
+
+.container-logo h1{
+    font-size: 32px;
+}
+
+.container-logo h1:last-child{
+    color:#880000;
+}
+
+.nav-bar{
+    width: 44vw;
+    height: 10vh;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0% 27%;
+}
+
+.desactive{
+    font-weight: bold;
+    font-size: 24px;
+    color: #8080809a;
+    margin: 0% 2.5%;
+    text-decoration: none;
+}
+
+.active{
+    animation:click ease-in-out  .5s forwards;
+}
+
+@keyframes click {
+    from{
+        font-weight: bold;
+    font-size: 24px;
+    color: #c9c9c9;
+    margin: 0% 2.5%;
+    text-decoration: none;
+    background: rgb(240,240,240);
+    background: -moz-radial-gradient(circle, rgba(240,240,240,1) 0%, rgba(120,120,120,1) 70%);
+    background: -webkit-radial-gradient(circle, rgba(240,240,240,1) 0%, rgba(120,120,120,1) 70%);
+    background: radial-gradient(circle, rgba(240,240,240,1) 110%, rgba(120,120,120,1) 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0f0f0",endColorstr="#787878",GradientType=1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    }
+
+    to{
+        font-weight: bold;
+    font-size: 24px;
+    background: rgb(240,240,240);
+    background: -moz-radial-gradient(circle, rgba(240,240,240,1) 0%, rgba(120,120,120,1) 70%);
+    background: -webkit-radial-gradient(circle, rgba(240,240,240,1) 0%, rgba(120,120,120,1) 70%);
+    background: radial-gradient(circle, rgba(240,240,240,1) 0%, rgba(120,120,120,1) 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0f0f0",endColorstr="#787878",GradientType=1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin: 0% 2.5%;
+    padding: .1em 0em;
+    -webkit-box-shadow: -3px 26px 36px -5px rgba(240,14,14,1);
+-moz-box-shadow: 0px 6px 36px -5px rgba(240,14,14,1);
+box-shadow: 0px .7em 10px -.5em #ff0000;
+text-decoration: none;
+    }
+}
