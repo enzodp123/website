@@ -3,12 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://enzodp123.github.io/website-react/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy":"npm run bild",
+    "deploy":"gh-pages -d dist"
+
   },
   "dependencies": {
     "react": "^18.3.1",
